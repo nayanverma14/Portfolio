@@ -6,7 +6,6 @@
         </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="initial-scale=1">
         <style>
             a:link 
             {
@@ -40,7 +39,6 @@
                 color: rgb(206, 206, 206);
                 background-color: rgb(10, 10, 10);
                 box-shadow:0px 0px 20px rgb(214, 214, 214);
-                height: 48vw;
             }
             .marginbar{
                 margin-top: 10px;
@@ -81,11 +79,15 @@
                 width: 70px;
                 padding-top: 20px;
             }
+            @viewport{
+                zoom: 1.0;
+                width: extend-to-zoom;
+            }
         </style>
     </head>
-    <body>
+    <body >
         <!--        Left Column        -->
-        <div class="column" style="float: left;width: 23%;">
+        <div class="column" id="left" style="float: left;width: 23%;">
             <div style="padding-top: 10%;padding-left: 15%;padding: right 15%;margin-left: auto;margin-right: auto;">
                 <!--    Photo     -->
                 <img src="me.jpg" style="width: 80%;border-radius: 50%;box-shadow:0px 0px 30px rgb(38, 207, 38);" >
@@ -96,7 +98,7 @@
                     Nayan Verma
                 </h1>
             </div>
-            <div style="text-align: center;">
+            <div style="text-align: center;margin-bottom: 4vw;">
                 <!--     All the Buttons    -->
                 <h3 style="padding-top: 1vw;"><a class="button" href="#Introduction">Introduction</a></h3>
                 <h3 style="padding-top: 1vw;"><a class="button" href="#Education">Education</a></h3>
@@ -107,7 +109,7 @@
             </div>
         </div>
         <!--   Right Column    -->
-        <div class="column" style="float: right;width: 73%;overflow: auto;">
+        <div class="column" id="right"  style="float: right;width: 73%;overflow: auto;">
             <!--     Introduction   -->
             <div id="Introduction" style="padding: 70px;padding-bottom: 30px;"> 
                 <p >
